@@ -139,7 +139,6 @@ X:\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.TagHe
 X:\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.TagHelpers.output.cache
 X:\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.RazorCoreGenerate.cache
 X:\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Add.cshtml.g.cs
-X:\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Delete.cshtml.g.cs
 X:\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Edit.cshtml.g.cs
 X:\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 X:\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs

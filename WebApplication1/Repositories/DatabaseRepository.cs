@@ -122,7 +122,7 @@ namespace WebApplication1.Repositories
                 query.Add(employee);
 
                 for (int i = 0; i < programmingLangauages.Count; i++)
-                {                    
+                {
                     query.Add(new EmployeesModel
                     {
                         EmployeeId = programmingLangauages[i].ProgrammingLanguageId,
@@ -145,6 +145,7 @@ namespace WebApplication1.Repositories
                         Departament = departaments[i].DepartamentName,
                         ProgrammingLanguageId = null
                     });
+
                 }
                 return query;
             }
