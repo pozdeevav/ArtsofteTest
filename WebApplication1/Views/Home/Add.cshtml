@@ -1,0 +1,71 @@
+﻿@model List<EmployeesModel>
+@{
+    ViewData["Title"] = "Добавить сотрудника";
+}
+
+<link rel="stylesheet" href="~/css/Add.css" />
+
+<body>
+
+    <form asp-action="Add" method="post">
+        <h1>Добавление сотрудника</h1>
+
+        <div class="addEmployee">
+            <div class="addForm">
+                <div class="addText">Имя</div>
+                <div class="addInput">
+                    <input type="text" name="firstName" placeholder="Введите имя" />
+                </div>
+            </div>
+            <div class="addForm">
+                <div class="addText">Фамилия</div>
+                <div class="addInput">
+                    <input type="text" name="secondName" placeholder="Введите фамилию" />
+                </div>
+            </div>
+            <div class="addForm">
+                <div class="addText">Возраст</div>
+                <div class="addInput">
+                    <input type="text" name="age" placeholder="Введите возраст" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" />
+                </div>
+            </div>
+
+            <div class="addForm">
+                <div class="addText">Отдел</div>
+                <div class="addInput">
+                    <select id="departamentList" name="departament" class="selectList">
+                        @foreach (var item in Model)
+                        {
+                            if (item.Departament != null)
+                            {
+                                <option value="@item.EmployeeId">@item.Departament</option>
+                            }
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="addForm">
+                <div class="addText">Язык программирования</div>
+                <div class="addInput">
+                    <select id="programmingLanguagesList" name="programmingLanguageId" class="selectList">
+                        @foreach (var item in Model)
+                        {
+                            if(item.ProgrammingLanguageId != null)
+                            {
+                                <option value="@item.EmployeeId">@item.ProgrammingLanguageId</option>
+                            }                            
+                         }
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="readyButtons">
+            <div class="addButton">
+                <input type="submit" value="Добавить" />
+            </div>
+            <div class="closeButton">
+                <input type="button" value="Отмена" />
+            </div>
+        </div>
+    </form>
+</body>

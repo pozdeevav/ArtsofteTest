@@ -1,0 +1,43 @@
+﻿body {
+   
+}
+
+.addEmployee {
+    max-width: 450px;
+}
+
+.addForm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addText {
+    max-width: 250px;
+
+    padding: 10px;
+
+    margin-left: auto;
+}
+
+.selectList {
+    min-width: 180px;
+}
+
+.addInput {
+    padding: 10px;
+}
+
+.readyButtons {
+    display: flex;
+    justify-content: center;
+
+    max-width: 300px;
+}
+
+.addButton {
+    padding: 15px;
+}
+
+.closeButton {
+    padding: 15px;
+}

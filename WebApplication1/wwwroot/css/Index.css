@@ -1,0 +1,33 @@
+﻿.AddButton {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.AddButton a {
+    cursor: pointer;
+
+}
+
+.employeesTable {
+    text-align: center;
+}
+
+.tableTh {
+    padding: 5px;
+
+    border: solid 1px black;
+}
+
+.tableTd {
+    padding: 5px;
+
+    border: solid 1px black;
+}
+
+.hiddenTh {
+    display: none;
+}
+
+.hiddenTd {
+    display: none;
+}

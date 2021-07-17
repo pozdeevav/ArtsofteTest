@@ -1,0 +1,40 @@
+﻿@model List<EmployeesModel>
+@{
+    ViewData["Title"] = "Сотрудники";
+}
+
+<link rel="stylesheet" href="~/css/Index.css"/>
+<body>
+    <h1>Сотрудники</h1>
+
+    <div class="AddButton">
+        <a asp-action="Add">Добавить</a>
+    </div>
+
+    <table class="employeesTable">
+        <tr>
+            <th class="hiddenTh">ID</th>
+            <th class="tableTh">Имя</th>
+            <th class="tableTh">Фамилия</th>
+            <th class="tableTh">Возраст</th>
+            <th class="tableTh">Отдел</th>
+            <th class="tableTh">Язык<br />программирования</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="hiddenTd" name="EmployeeId" >@item.EmployeeId</td>
+                <td class="tableTd" name="FirstName" >@item.FirstName</td>
+                <td class="tableTd" name="SecondName" >@item.SecondName</td>
+                <td class="tableTd" name="Age" >@item.Age</td>
+                <td class="tableTd">@item.Departament</td>
+                <td class="tableTd">@item.ProgrammingLanguageId</td>
+                <td class="tableTd">
+                    <a class="ChangeButton" asp-action="Edit" asp-route-id="@item.EmployeeId">Изменить</a>
+                    <br />
+                    <a class="DeleteButton" asp-action="Delete" asp-route-id="@item.EmployeeId">Удалить</a>
+                </td>
+            </tr>
+        }
+    </table>
+</body>
